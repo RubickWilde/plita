@@ -59,6 +59,7 @@ function addElement(tag,cName,content) {
 }
 
 function finishTest() {
+  questionList.innerHTML = null;
   var i = Math.floor(Math.random()*results.length);
   questionList.appendChild(addElement("h1","finish","Результаты теста:"));
   questionList.appendChild(addElement("h2","finish",results[i].name));
