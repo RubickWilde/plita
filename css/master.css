@@ -3,6 +3,6 @@ ul {
 }
 
 .finish_image {
-  width: 400px;
-  height: 400px;
+  max-width: 600px;
+  max-height: 400px;
 }

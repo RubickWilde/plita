@@ -2,7 +2,16 @@ var questionList = document.getElementById("test-questions");
 var button;
 var questionNumber = 0;
 
-addQuestion(questionList);
+questionList.appendChild(addElement("h1","start_test_heading","КаКаЯ тЫ ПлиТа???"));
+questionList.appendChild(addElement("h3","start_test_description","хочешь УЗНАТЬ?!"));
+questionList.appendChild(addElement("h5","start_test_description","жми на кнопку↓"));
+var knopka = addElement("button","start_test_button","кнопка-блять");
+questionList.appendChild(knopka);
+knopka.onclick = function () {
+  questionList.innerHTML = null;
+  addQuestion(questionList);
+}
+
 
 
 
